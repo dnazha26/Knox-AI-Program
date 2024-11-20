@@ -61,76 +61,106 @@ input:focus {
 .login-button:hover {
     background-color: #0056b3;
 }
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eaf2f8;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaf2f8;
+        }
 
-.login-container {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    padding: 25px;
-    width: 350px;
-    text-align: center;
-}
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            padding: 25px;
+            width: 350px;
+            text-align: center;
+        }
 
-.logo-container {
-    margin-bottom: 20px;
-}
+        .logo-container {
+            margin-bottom: 20px;
+        }
 
-.logo {
-    max-width: 100px;
-    height: auto;
-}
+        .logo {
+            max-width: 100px;
+            height: auto;
+        }
 
-h2 {
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
+        h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
 
-.input-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #34495e;
-}
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #34495e;
+        }
 
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #bdc3c7;
-    border-radius: 5px;
-    font-size: 14px;
-}
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-input:focus {
-    outline: none;
-    border-color: #3498db;
-}
+        input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
 
-.login-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+        .login-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
 
-.login-button:hover {
-    background-color: #2980b9;
-}
+        .login-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="School Logo" class="logo">
+        </div>
+        <h2>Welcome to the School Portal</h2>
+        <form action="/dashboard" method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
